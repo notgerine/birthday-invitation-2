@@ -99,11 +99,11 @@ const CONFIG = {
 
   place: "Sealand Villa, 326 Sealand Road, Singapore 508252",
 
-  extra: "Food • Games • Swimming • Karaoke",
+  extra: "Food • Games • Swimming • Bowling",
 
   rsvpBy: "20 November 2026",
 
-  centerImage: "images/sanrio.png",
+  centerImage: "810a259f-b84e-4260-898c-2a78a6bf69ae.jpg",
 
   charmImages: [],
 
@@ -175,9 +175,8 @@ T('loc', 'Location: ' + C.place); T('extra', C.extra);
 T('rsvpTitle', 'Will you come? Reply by ' + C.rsvpBy);
 
 // age shown as fabric number patches around the picture
-const age = String(C.age);
-$('numL').innerHTML = `<span class="num n0">${age[0] || ''}</span>`;
-$('numR').innerHTML = age.length > 1 ? `<span class="num n1">${age.slice(1)}</span>` : '';
+$('numL').innerHTML = '';
+$('numR').innerHTML = '';
 
 $('art').innerHTML = C.centerImage ? `<img class="cake" src="${C.centerImage}" alt="">` : `
 <svg class="cake" viewBox="0 0 140 112" aria-hidden="true"><g stroke="#1d1a1c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
